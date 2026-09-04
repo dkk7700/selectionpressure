@@ -1,7 +1,15 @@
 {
   "name": "selectionpressure",
+  // Pins the Workers runtime API behavior; unrelated to the Hugo version.
   "compatibility_date": "2026-09-02",
+
+  // Serve only on the custom domain. Without these, wrangler re-enables
+  // the *.workers.dev hostname on every deploy, overriding the dashboard toggle.
+  "workers_dev": false,
+  "preview_urls": false,
+
   "assets": {
+    // Hugo's build output. Not committed -- see .gitignore.
     "directory": "./public/"
   }
 }
