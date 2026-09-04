@@ -1,8 +1,37 @@
+# Hugo build output
 public/
 resources/
 .hugo_build.lock
+
+# Cloudflare Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Node (npx wrangler pulls this in locally)
+node_modules/
+
+# Secrets and credentials — belt and braces for a public repo
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Vale config and the reject vocabulary stay local (Appendix B)
 .vale/
+.vale.ini
+
+# Editor and OS noise
+.vscode/
+.idea/
+.frontmatter/database/
+*.swp
+*~
+.DS_Store
+
+# Backups, merge and patch leftovers
 *.orig
 *.bak
-*.orig
-*.bak
+*.rej
