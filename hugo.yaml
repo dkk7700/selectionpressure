@@ -1,0 +1,44 @@
+baseURL: "https://selectionpressure.dev/"
+languageCode: "en-us"
+title: "Selection Pressure"
+theme: "PaperMod"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+ 
+pagination:
+  pagerSize: 10
+ 
+params:
+  author: "David Kleiner"
+  description: "Notes on security research, hardened
+    infrastructure, and what adversaries evolve into
+    under partial controls."
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  comments: false
+  defaultTheme: auto
+  homeInfoParams:
+    Title: "Selection Pressure"
+    Content: >
+      Partial controls select for adversaries that evade
+      them. Notes on secure systems, detection engineering,
+      and hardening things that were not built to be
+      hardened. Written by David Kleiner.
+  socialIcons:
+    - name: github
+      url: "https://github.com/dkk7700"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/david-kleiner-97066689"
+ 
+menu:
+  main:
+    - identifier: posts
+      name: "Writing"
+      url: "/posts/"
+      weight: 10
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 20

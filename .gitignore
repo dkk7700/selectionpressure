@@ -1,0 +1,8 @@
+public/
+resources/
+.hugo_build.lock
+.vale/
+*.orig
+*.bak
+*.orig
+*.bak
